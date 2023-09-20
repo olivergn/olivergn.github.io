@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+h1,
+h3 {
+    color: black;
+    /* text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; */
+}
+
+header {
+    background-color: lightblue;
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+header h4 {
+    color: gray;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+nav {
+    background-color: lightgray;
+}
+
+nav a {
+    color: black;
+    margin: 0 15px;
+}
+
+.social-nav {
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.website-nav {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.content {
+    padding: 5px;
+}
+
+.center-content {
+    text-align: center;
+    max-width: 100%;
+    /* Set a maximum width for responsiveness */
+    margin: 0 auto;
+    /* Center horizontally */
+    display: block;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.blank-div {
+    padding: 5px;
+}
+
+/* Initially, hide the elements */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    /* Add a transition for the opacity property */
+}
+
+/* When the div gets a "show" class, make the elements visible */
+.fade-in.show {
+    opacity: 1;
+}
+
+.slide-in {
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+    text-align: center;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 769px) {
+    .center-text {
+        max-width: 40%; /* Limit text container to 40% width on PCs */
+        margin: 0 auto; /* Center the text container on PCs */
+    }
+}
+
+@media (max-width: 768px) {
+    .center-text {
+        max-width: 100%; /* Use the full available width on mobile devices */
+    }
+}
