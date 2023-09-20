@@ -56,6 +56,13 @@ nav a {
     margin: 0 15px;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
 .social-nav {
     border-top: 2px solid black;
     border-bottom: 1px solid black;
@@ -84,6 +91,25 @@ nav a {
 .center-text {
     text-align: center;
 }
+
+.blue-button {
+    background-color: #0074d9;
+    /* Change this color to your desired blue */
+    color: white;
+    border-radius: 20px;
+    /* Adjust the border-radius to control the curvature */
+    padding: 15px 30px;
+    /* Increase the padding to make the buttons bigger */
+    font-size: 16px;
+    /* Increase the font size to make the text larger */
+    transition: background-color 0.3s ease;
+}
+
+.blue-button:hover {
+    background-color: #619ad6;
+    /* Change the hover color to a darker shade of blue */
+}
+
 
 .blank-div {
     padding: 5px;
@@ -121,13 +147,16 @@ nav a {
 
 @media (min-width: 769px) {
     .center-text {
-        max-width: 40%; /* Limit text container to 40% width on PCs */
-        margin: 0 auto; /* Center the text container on PCs */
+        max-width: 40%;
+        /* Limit text container to 40% width on PCs */
+        margin: 0 auto;
+        /* Center the text container on PCs */
     }
 }
 
 @media (max-width: 768px) {
     .center-text {
-        max-width: 100%; /* Use the full available width on mobile devices */
+        max-width: 100%;
+        /* Use the full available width on mobile devices */
     }
 }
