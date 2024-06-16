@@ -63,6 +63,10 @@ button {
 }
 
 
+.fa {
+    text-decoration: none;
+}
+
 .social-nav {
     border-top: 2px solid black;
     border-bottom: 1px solid black;
@@ -132,6 +136,7 @@ button {
     opacity: 0;
     text-align: center;
 }
+
 
 @keyframes slideIn {
     0% {
