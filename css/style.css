@@ -8,12 +8,18 @@ body {
 }
 
 header {
+    position: fixed;
+
+    width: 100%;
+
     padding-top: 1vh;
     padding-bottom: 1vh;
 
     background-color: black;
     color: white;
 }
+
+/* Social Bar */
 
 .social-bar {
     display: flex;
@@ -32,18 +38,22 @@ header {
     float: right;
 }
 
-.nav-bar {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
 .social-bar a {
     vertical-align: top;
 
     padding-left: 15px;
 
     color: white;
+
+    text-decoration: none;
+}
+
+/* Nav Bar */
+
+.nav-bar {
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
 .nav-bar a {
