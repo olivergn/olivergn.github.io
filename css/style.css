@@ -12,11 +12,16 @@ header {
 
     width: 100%;
 
+    top: 0;
     padding-top: 1vh;
     padding-bottom: 1vh;
 
     background-color: black;
     color: white;
+}
+
+main {
+    margin-top: 15vh;
 }
 
 /* Social Bar */
