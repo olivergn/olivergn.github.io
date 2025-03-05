@@ -83,3 +83,12 @@ main {
         left: 0;
     }
 }
+
+#fade-in {
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
