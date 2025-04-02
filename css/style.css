@@ -29,6 +29,10 @@ main {
     text-align: center;
 }
 
+main h2 {
+    color: #a9a9a9;
+}
+
 /* Social Bar */
 
 .social-bar {
