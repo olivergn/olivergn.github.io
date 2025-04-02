@@ -24,7 +24,7 @@ main {
     width: 50%;
 
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 17vh;
 
     text-align: center;
 }
@@ -90,10 +90,11 @@ main {
 }
 
 #fade-in {
-    animation: fade 5s;
+    animation: fade 4s;
 }
 
 @keyframes fade {
     0% { opacity: 0%; }
+    20% { opacity: 0%; }
     100% { opacity: 100%; }
 }
