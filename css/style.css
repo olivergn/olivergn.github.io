@@ -21,7 +21,9 @@ header {
 }
 
 main {
-    margin-top: 15vh;
+    margin-top: 20vh;
+
+    text-align: center;
 }
 
 /* Social Bar */
@@ -85,7 +87,7 @@ main {
 }
 
 #fade-in {
-    animation: fade 3s;
+    animation: fade 5s;
 }
 
 @keyframes fade {
