@@ -94,19 +94,25 @@ main h2 {
 }
 
 #fade-in-delay-1 {
-    animation: fade-delay 4s;
+    animation: fade-delay-20 4s;
 }
 
 #fade-in-delay-2 {
-    animation: fade-delay 6s;
+    animation: fade-delay-20 5s;
 }
 
 #fade-in-delay-3 {
-    animation: fade-delay 8s;
+    animation: fade-delay-25 6s;
 }
 
-@keyframes fade-delay {
+@keyframes fade-delay-20 {
     0% { opacity: 0%; }
     20% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
+
+@keyframes fade-delay-25 {
+    0% { opacity: 0%; }
+    25% { opacity: 0%; }
     100% { opacity: 100%; }
 }
