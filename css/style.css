@@ -24,9 +24,13 @@ main {
     width: 50%;
 
     margin: auto;
-    margin-top: 17vh;
+    margin-top: 120px;
 
     text-align: center;
+}
+
+main h2 {
+    color: #a9a9a9;
 }
 
 /* Social Bar */
@@ -89,12 +93,26 @@ main {
     }
 }
 
-#fade-in {
-    animation: fade 4s;
+#fade-in-delay-1 {
+    animation: fade-delay-20 4s;
 }
 
-@keyframes fade {
+#fade-in-delay-2 {
+    animation: fade-delay-20 5s;
+}
+
+#fade-in-delay-3 {
+    animation: fade-delay-25 6s;
+}
+
+@keyframes fade-delay-20 {
     0% { opacity: 0%; }
     20% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
+
+@keyframes fade-delay-25 {
+    0% { opacity: 0%; }
+    25% { opacity: 0%; }
     100% { opacity: 100%; }
 }
