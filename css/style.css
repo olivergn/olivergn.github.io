@@ -21,6 +21,9 @@ header {
 }
 
 main {
+    width: 50%;
+
+    margin: auto;
     margin-top: 20vh;
 
     text-align: center;
