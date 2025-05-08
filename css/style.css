@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+header {
+    position: fixed;
+
+    width: 100%;
+    min-height: 85px;
+
+    top: 0;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    background-color: black;
+    color: white;
+}
+
+main {
+    width: 50%;
+
+    margin: auto;
+    margin-top: 120px;
+
+    text-align: center;
+}
+
+/* Social Bar */
+
+.social-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-bar h1 {
+    margin-top: 0;
+    padding-left: 30px;
+}
+
+.social-bar nav {
+    margin-right: 30px;
+
+    float: right;
+}
+
+.social-bar a {
+    vertical-align: top;
+
+    padding-left: 15px;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+/* Nav Bar */
+
+.nav-bar {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.nav-bar a {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    color: white;
+}
+
+/* My Skills */
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-container button {
+    margin: 2px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #4f4f4f;
+    color: #dddddd;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Animation */
+
+#slide-fade-in {
+    left: -100%;
+    animation: slide-fade 3s forwards;
+}
+
+@keyframes slide-fade {
+    0% { opacity: 0%; }
+    50% { left: 0; }
+    100% {
+        opacity: 100%;
+        left: 0;
+    }
+}
+
+#fade-in-delay-1 {
+    animation: fade-delay-20 4s;
+}
+
+#fade-in-delay-2 {
+    animation: fade-delay-20 5s;
+}
+
+#fade-in-delay-3 {
+    animation: fade-delay-25 6s;
+}
+
+@keyframes fade-delay-20 {
+    0% { opacity: 0%; }
+    20% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
+
+@keyframes fade-delay-25 {
+    0% { opacity: 0%; }
+    25% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
+
+/* Mobile phones */
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 75%;
+
+        margin-top: 150px;
+    }
+}
