@@ -1,0 +1,272 @@
+/** Element selectors */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 12vh;
+    width: 100vw;
+
+    padding: 1px;
+
+    border-bottom: 5px solid black;
+
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+footer {
+    height: 7vh;
+    width: 100vw;
+
+    padding: 1px;
+
+    position: fixed;
+    bottom: 0;
+
+    border-top: 5px solid black;
+
+    color: white;
+    text-align: center;
+}
+
+main {
+    /* background-color: black; */
+    height: 81vh;
+
+    display: flex;
+}
+
+/** Class selectors */
+
+.sidebar {
+    width: 25vw;
+
+    padding-bottom: 3vh;
+    padding-left: 0.5%;
+
+    overflow: auto;
+
+    border-right: 5px solid black;
+}
+
+.sidebar h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.sidebar input,
+.sidebar select {
+    height: 35px;
+    width: 95%;
+
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar br {
+    clear: both;
+}
+
+.view {
+    min-height: 73vh;
+    width: calc(100% - 25vw);
+
+    overflow: auto;
+}
+
+/** Theme colours */
+
+.blue-1 {
+    background-color: #003153;
+}
+
+.blue-2 {
+    background-color: #00004b;
+}
+
+.blue-3 {
+    background-color: #012169;
+}
+
+.red-1 {
+    background-color: #4b0000;
+}
+
+.red-2 {
+    background-color: #8b0000;
+}
+
+.red-3 {
+    background-color: #c8102e;
+}
+
+/** Bird information boxes */
+
+.infobox-container {
+    min-height: 100%;
+
+    padding: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infobox {
+    height: fit-content;
+    width: 300px;
+
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+
+    border: black 3px solid;
+    border-radius: 10px;
+
+    color: white;
+}
+
+.infobox input {
+    margin-top: 5%;
+    margin-left: 5%;
+
+    border: white 1px solid;
+    border-radius: 3px;
+
+    background-color: transparent;
+    color: white;
+}
+
+.infobox input:active {
+    background-color: white;
+}
+
+.infobox img {
+    width: 270px;
+    height: 180px;
+    object-fit: cover;
+
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    outline: black 3px solid;
+    border-radius: 5px;
+}
+
+.infobox h2 {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    text-align: right;
+}
+
+.infobox table {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    text-align: left;
+}
+
+.infobox th,
+.infobox td {
+    vertical-align: text-top;
+}
+
+.infobox td {
+    text-align: right;
+}
+
+.infobox .credit {
+    padding-left: 5%;
+}
+
+/** Conservation status list and icons */
+
+.status-entry {
+    margin-bottom: 1px;
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+
+    margin-right: 5px;
+
+    float: left;
+
+    border: black 2px solid;
+    border-radius: 50%;
+}
+
+.circle-big {
+    height: 20px;
+    width: 20px;
+
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 5px;
+
+    float: left;
+
+    border: black 2px solid;
+    border-radius: 50%;
+}
+
+.col-nt {
+    background-color: #02a028;
+}
+
+.col-nu {
+    background-color: #649a31;
+}
+
+.col-rl {
+    background-color: #99cb68;
+}
+
+.col-rc {
+    background-color: #fecc33;
+}
+
+.col-dc {
+    background-color: #fe9a01;
+}
+
+.col-ni {
+    background-color: #c26967;
+}
+
+.col-nv {
+    background-color: #9b0000;
+}
+
+.col-ne {
+    background-color: #660032;
+}
+
+.col-nc {
+    background-color: #320033;
+}
+
+.col-black {
+    background-color: black;
+}
+
+.col-error {
+    background-color: #ff00ff;
+}

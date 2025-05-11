@@ -96,6 +96,23 @@ main {
     font-weight: 600;
 }
 
+/* Portfolio */
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    padding: 10px;
+
+    border: solid #4f4f4f;
+    border-radius: 10px;
+
+    background-color: #dddddd;
+}
+
 /* Animation */
 
 #slide-fade-in {
