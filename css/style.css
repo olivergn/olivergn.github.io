@@ -105,6 +105,7 @@ main {
 }
 
 .project {
+    margin-bottom: 20px;
     padding: 10px;
 
     border: solid #4f4f4f;
